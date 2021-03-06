@@ -54,7 +54,7 @@ When we write a confirmation message, we tend to erroneously describe in the sho
 
 #### Example 1:
 <pre>
-<code>fix(button-component): Label update bug fixed
+<code>fix(button-component): label update bug fixed
 
 The connection between the aria-label when executing componentDidUpdate was solved</code>
 </pre>
