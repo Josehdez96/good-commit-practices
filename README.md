@@ -51,11 +51,17 @@ Commit messages can be divided into two parts, the short(and mandatory) message 
 #### What to write in the message
 When we write a confirmation message, we tend to erroneously describe in the short message the technical solution used, instead of giving a short description of the problem that is being solved, which is what really matters. If we want to specify the technical solution we can use the optional description message, for example:
 
-- <code>fix(button-component): Label update bug fixed
+Example 1:
+<pre>
+<code>fix(button-component): Label update bug fixed
 
-  The connection between the aria-label when executing componentDidUpdate was solved</code>
-  
-- <code>build: fixed demo app build command on linux
+The connection between the aria-label when executing componentDidUpdate was solved</code>
+</pre>
 
-  used shx to erase old dist fromt the demo app.</code>
+Example 2:
+<pre>
+<code>build: fixed demo app build command on linux
+
+used shx to erase old dist fromt the demo app.</code>
+</pre>
 
