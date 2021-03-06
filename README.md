@@ -2,7 +2,7 @@
 
 ### Introduction
 
-I have relied on some already established patterns to make commits, however, this guide is oriented to how collecting information I have seen that it is clear and works very well.
+I have relied on some already established patterns for writing commits, however, this guide has been created as a compilation of good practices for writing them.
 
 ### Step 1: Atomic commit
 A commit need to be easily reversible, having everything needed for that fix or new funcionality in a single commit. Small commit are preferable, but each commit should work alone in insolation, solving a single problem, to be atomic. Sometimes an atomic commit ends uup large, but an atomic commit should not solve more than one problem at the same time
