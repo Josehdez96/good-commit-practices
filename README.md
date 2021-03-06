@@ -1,4 +1,4 @@
-# Commits message guide
+# My good commit practices guide
 
 ### Introduction
 
