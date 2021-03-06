@@ -29,7 +29,8 @@ For exahmple, to resolve a bug, it is sometimes necessary to edit several files 
 ### Step 3: Write context changes and examples
 In both changes (if you generate a new version or not) you should write the context to be clear what you worked on, for example:
 
-#### Examples if you generate a new version:
+#### Examples:
+#### if you generate a new version:
 - correction a bug in button component:
   - <code>fix(button-component): corrected text</code>
 - adding a new input option in form:
@@ -37,7 +38,7 @@ In both changes (if you generate a new version or not) you should write the cont
 - improvement in segment service:
   - <code>fix(segment-service): improved notification performance when changing segment</code>
 
-#### Examples if you don't generate any version:
+#### if you don't generate any version:
 - improving test coverage in navbar component:
   - <code>test(navbar-component): test coverage for output events</code>
 - correcting formation errors in the segment service:
@@ -51,14 +52,14 @@ Commit messages can be divided into two parts, the short(and mandatory) message 
 #### What to write in the message
 When we write a confirmation message, we tend to erroneously describe in the short message the technical solution used, instead of giving a short description of the problem that is being solved, which is what really matters. If we want to specify the technical solution we can use the optional description message, for example:
 
-Example 1:
+#### Example 1:
 <pre>
 <code>fix(button-component): Label update bug fixed
 
 The connection between the aria-label when executing componentDidUpdate was solved</code>
 </pre>
 
-Example 2:
+#### Example 2:
 <pre>
 <code>build: fixed demo app build command on linux
 
