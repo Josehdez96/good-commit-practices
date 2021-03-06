@@ -5,9 +5,9 @@
 I have relied on some already established patterns for writing commits, however, this guide has been created as a compilation of good practices for writing them.
 
 ### Step 1: Atomic commit
-A commit need to be easily reversible, having everything needed for that fix or new funcionality in a single commit. Small commit are preferable, but each commit should work alone in insolation, solving a single problem, to be atomic. Sometimes an atomic commit ends uup large, but an atomic commit should not solve more than one problem at the same time
+A commit need to be easily reversible, having everything needed for that fix or new funcionality in a single commit. Small commit are preferable, but each commit should work alone in insolation, solving a single problem, to be atomic. Sometimes an atomic commit ends up large, but an atomic commit should not solve more than one problem at the same time
 
-For exahmple, to resolve a bug, it is sometimes necessary to edit several files at the same time, and the commit remains atomic. However, if when solving this bug you want to take the opportunity to refactor something outside this context of the bug, improve documentation for another component, these things need to be in seperate commits, in order to be atomic.
+For example, to resolve a bug, it is sometimes necessary to edit several files at the same time, and the commit remains atomic. However, if when solving this bug you want to take the opportunity to refactor something outside this context of the bug, improve documentation for another component, these things need to be in seperate commits, in order to be atomic.
 
 ### Step 2: New version or not
 #### If a new version is to be generated, we have three options for the type of commit:
