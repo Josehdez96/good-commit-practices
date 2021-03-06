@@ -13,37 +13,37 @@ For exahmple, to resolve a bug, it is sometimes necessary to edit several files 
 #### If a new version is to be generated, we have three options for the type of commit:
 
 - <code>fix</code>: this commit has a correction or improvement to something that is currently in the public API of the project.
-- feature: this commit is introducing new funcionality in the public API of the project
-- BREAKING CHANGE: this commit is also one feature or one fix, but fot his new functionality or correction to be made,something that is currently in the public API of the project will have to be changed, making the user of our project, when updating the version, be able to have some manual work because of that.
+- <code>feature</code>: this commit is introducing new funcionality in the public API of the project
+- <code>BREAKING CHANGE</code>: this commit is also one feature or one fix, but fot his new functionality or correction to be made,something that is currently in the public API of the project will have to be changed, making the user of our project, when updating the version, be able to have some manual work because of that.
 
 #### If you don't generate any version:
-- build: changes in settings and commands that generate the project build, examples: npm, tsconfig, angular-cli, webpack, etc.
-- ci: changes in CI settings, examples: Jenkinsfile, artifactory, puppet, etc.
-- docs: commit that contains ONLY documentation improvements.
-- perf: small performance improvements in the application that do not need to generate new version
-- refactor: improvements to the code that doesn't correct any bugs, does not add a new feature or generate breaking changes, which do not need to generate a new version.
-- style: styles or cosmetic code improvements
-- test: commit that contains ONLY new tests or corrects existing test.
-- chore: if the edits to this commit are very generic and do not fit in ANY of the previous types, then this option can be used.
+- <code>build</code>: changes in settings and commands that generate the project build, examples: npm, tsconfig, angular-cli, webpack, etc.
+- <code>ci</code>: changes in CI settings, examples: Jenkinsfile, artifactory, puppet, etc.
+- <code>docs</code>: commit that contains ONLY documentation improvements.
+- <code>perf</code>: small performance improvements in the application that do not need to generate new version
+- <code>refactor</code>: improvements to the code that doesn't correct any bugs, does not add a new feature or generate breaking changes, which do not need to generate a new version.
+- <code>style</code>: styles or cosmetic code improvements
+- <code>test</code>: commit that contains ONLY new tests or corrects existing test.
+- <code>chore</code>: if the edits to this commit are very generic and do not fit in ANY of the previous types, then this option can be used.
 
 ### Step 3: Write context changes and examples
 In both changes (if you generate a new version or not) you should write the context to be clear what you worked on, for example:
 
 #### Examples if you generate a new version:
 - correction a bug in button component:
-  - fix(button-component): corrected text
+  - <code>fix(button-component): corrected text</code>
 - adding a new input option in form:
-  - feature(form-component): new option for color variation
+  - <code>feature(form-component): new option for color variation</code>
 - improvement in segment service:
-  - fix(segment-service): improved notification performance when changing segment
+  - <code>fix(segment-service): improved notification performance when changing segment</code>
 
 #### Examples if you don't generate any version:
 - improving test coverage in navbar component:
-  - test(navbar-component): test coverage for output events
+  - <code>test(navbar-component): test coverage for output events</code>
 - correcting formation errors in the segment service:
-  - style(service-component): standarized spacing between function blocks
+  - <code>style(service-component): standarized spacing between function blocks</code>
 - chaning settings for the project's production build:
-  - build: new optimizations for React production build
+  - <code>build: new optimizations for React production build</code>
 
 ### Step 4: How to write messages correctly
 Commit messages can be divided into two parts, the short(and mandatory) message is right after the type and context of the commit, and the long (and optional) message that is the specific description of the commit.
@@ -51,11 +51,11 @@ Commit messages can be divided into two parts, the short(and mandatory) message 
 #### What to write in the message
 When we write a confirmation message, we tend to erroneously describe in the short message the technical solution used, instead of giving a short description of the problem that is being solved, which is what really matters. If we want to specify the technical solution we can use the optional description message, for example:
 
-- fix(button-component): Label update bug fixed
+- <code>fix(button-component): Label update bug fixed
 
-  The connection between the aria-label when executing componentDidUpdate was solved
+  The connection between the aria-label when executing componentDidUpdate was solved</code>
   
-- build: fixed demo app build command on linux
+- <code>build: fixed demo app build command on linux
 
-  used shx to erase old dist fromt the demo app.
+  used shx to erase old dist fromt the demo app.</code>
 
