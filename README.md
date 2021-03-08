@@ -5,7 +5,7 @@
 I have relied on some already established patterns for writing commits, however, this guide has been created as a compilation of good practices for writing them.
 
 ### Step 1: Atomic commit
-A commit need to be easily reversible, having everything needed for that fix or new funcionality in a single commit. Small commit are preferable, but each commit should work alone in insolation, solving a single problem, to be atomic. Sometimes an atomic commit ends up large, but an atomic commit should not solve more than one problem at the same time
+A commit need to be easily reversible, having everything needed for that fix or new funcionality in a single commit. Small commits are preferable, but each commit should work alone in isolation, solving a single problem, to be atomic. Sometimes an atomic commit ends up being large, but an atomic commit should not solve more than one problem at the same time
 
 For example, to resolve a bug, it is sometimes necessary to edit several files at the same time, and the commit remains atomic. However, if when solving this bug you want to take the opportunity to refactor something outside this context of the bug, improve documentation for another component, these things need to be in seperate commits, in order to be atomic.
 
@@ -13,8 +13,8 @@ For example, to resolve a bug, it is sometimes necessary to edit several files a
 #### If a new version is to be generated, we have three options for the type of commit:
 
 - <code>fix</code>: this commit has a correction or improvement to something that is currently in the public API of the project.
-- <code>feature</code>: this commit is introducing new funcionality in the public API of the project
-- <code>BREAKING CHANGE</code>: this commit is also one feature or one fix, but fot his new functionality or correction to be made,something that is currently in the public API of the project will have to be changed, making the user of our project, when updating the version, be able to have some manual work because of that.
+- <code>feature</code>: this commit is introducing new funcionality to the public API of the project
+- <code>BREAKING CHANGE</code>: this commit is also one feature or one fix, but for this new functionality or correction to be made,something that is currently in the public API of the project will have to be changed, so the user of our project will face a disruptive change in it's usage.
 
 #### If you don't generate any version:
 - <code>build</code>: changes in settings and commands that generate the project build, examples: npm, tsconfig, angular-cli, webpack, etc.
@@ -27,11 +27,11 @@ For example, to resolve a bug, it is sometimes necessary to edit several files a
 - <code>chore</code>: if the edits to this commit are very generic and do not fit in ANY of the previous types, then this option can be used.
 
 ### Step 3: Write context changes and examples
-In both changes (if you generate a new version or not) you should write the context to be clear what you worked on, for example:
+In both cases (if you generate a new version or not) you should write the context to be clear what you've worked on, for example:
 
 #### Examples:
 #### if you generate a new version:
-- correction a bug in button component:
+- correcting a bug in button component:
   - <code>fix(button-component): corrected text</code>
 - adding a new input option in form:
   - <code>feature(form-component): new option for color variation</code>
@@ -65,4 +65,3 @@ The connection between the aria-label when executing componentDidUpdate was solv
 
 used shx to erase old dist fromt the demo app.</code>
 </pre>
-
